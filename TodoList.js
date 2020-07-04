@@ -28,6 +28,9 @@ class TodoList extends Component {
     }
 
     putText(itemID, newText){
+
+        if(!itemID || !newText) return
+
         this.setState({
             list: this.state.list.map(item => {
                 if(item.id !== itemID) return item;
