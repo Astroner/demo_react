@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.inputer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 40vw;
+    left: 40vw;
+}
+#id {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+}
+#id * {
+    min-width: 30%;
+    
+}
+.border {
+    border: 2px solid black;
+    margin: 5px;
+    text-align: center;
+}
