@@ -18,6 +18,9 @@ class TodoList extends Component {
     }
 
     addElement(title, text){
+
+        if(!title || !text) return 
+
         this.setState({
             list: this.state.list.concat({
                 id: this.lastId++,
@@ -28,9 +31,6 @@ class TodoList extends Component {
     }
 
     putText(itemID, newText){
-
-        if(!itemID || !newText) return
-
         this.setState({
             list: this.state.list.map(item => {
                 if(item.id !== itemID) return item;
